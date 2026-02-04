@@ -1,0 +1,260 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendant combinators
+        .card p{
+            color: green;
+
+        } */
+         /* child combinators
+        .card > p{
+            color:aqua
+        /* } */
+         /* adjecent combinators
+         h4 + p {
+            color: blue;
+         }  */
+           h4 ~ p{
+            color: aquamarine;
+           }
+         
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h4>Lorem, ipsum dolor.</h4>
+        <p>
+            This is my first program
+        </p>
+        <p>Lorem, ipsum dolor.</p>
+        <h6>jdjhjd</h6>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi cupiditate, veniam repudiandae suscipit reprehenderit saepe, aut consequatur quo possimus nulla quia officiis aliquam dolorem, adipisci in esse recusandae necessitatibus deleniti!</p>
+        
+       <section>
+        <p>This my second program</p>
+        <p>ttttttt</p>
+        </section>
+    </div>
+</body>
+</html> -->!
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" id="check1">
+  <label class="form-check-label" for="check1">
+    Accept terms
+  </label>
+</div>
+<div class="px-5 bg-success text-white">
+  Padding left and right
+</div>
+<div class="px-5 bg-success text-white">
+  Padding left and right
+</div>
+<div class="px-5 bg-success text-white">
+  Padding left and right
+</div>
+<div id="slider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">Slide 1</div>
+    <div class="carousel-item">Slide 2</div>
+  </div>
+</div>
+<button data-bs-toggle="collapse" data-bs-target="#demo">Toggle</button>
+<div id="demo" class="collapse">
+  Hidden content
+</div>
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+    Menu
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item">Item 1</a></li>
+  </ul>
+</div>
+<button data-bs-toggle="modal" data-bs-target="#m1">Open</button>
+
+<div class="modal fade" id="m1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">Hello Modal</div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand">MySite</a>
+</nav>
+<button class="btn btn-info"
+  data-bs-toggle="popover"
+  data-bs-content="Popover text">
+  Click me
+</button>
+<button class="btn btn-secondary" data-bs-toggle="tooltip" title="Tooltip text">
+  Hover me
+</button>
+
+
+
+
+
+
+
+
+e
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flipkart Demo - Bootstrap Components</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Flipkart</a>
+
+    <div class="dropdown">
+      <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+        Categories
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item">Mobiles</a></li>
+        <li><a class="dropdown-item">Fashion</a></li>
+        <li><a class="dropdown-item">Electronics</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-4">
+
+  <!-- ALERT -->
+  <div class="alert alert-success">
+    Big Billion Sale is Live!
+  </div>
+
+  <!-- CAROUSEL -->
+  <div id="slider" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-warning text-center p-5">
+        <h3>sww </h3>
+      </div>
+      <div class="carousel-item bg-info text-center p-5">
+        <h3>eee</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <h5>iPhone</h5>
+          <p>₹70,000</p>
+          <span class="badge bg-success">New</span>
+          <br><br>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#buyModal">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIST GROUP -->
+  <ul class="list-group mt-4">
+    <li class="list-group-item active">Offers</li>
+    <li class="list-group-item">Bank Discount</li>
+    <li class="list-group-item">No Cost EMI</li>
+  </ul>
+
+  <!-- COLLAPSE -->
+  <button class="btn btn-warning mt-3" data-bs-toggle="collapse" data-bs-target="#details">
+    Product Details
+  </button>
+  <div id="details" class="collapse mt-2">
+    This product comes with 1 year warranty.
+  </div>
+
+  <!-- ACCORDION -->
+  <div class="accordion mt-4">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          FAQ
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show">
+        <div class="accordion-body">
+          Easy return within 7 days.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOOLTIP & POPOVER -->
+  <div class="mt-4">
+    <button class="btn btn-secondary" data-bs-toggle="tooltip" title="Add to wishlist">
+      ❤️
+    </button>
+
+    <button class="btn btn-info"
+      data-bs-toggle="popover"
+      data-bs-content="Limited stock available">
+      Stock Info
+    </button>
+  </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="buyModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5>Confirm Purchase</h5>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to buy?
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success">Yes</button>
+        <button class="btn btn-danger" data-bs-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  tooltipTriggerList.forEach(t => new bootstrap.Tooltip(t))
+
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  popoverTriggerList.forEach(p => new bootstrap.Popover(p))
+</script>
+
+</body>
+</html>
